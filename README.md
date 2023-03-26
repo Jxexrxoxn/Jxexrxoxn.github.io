@@ -1,1 +1,1 @@
-# Jxexrxoxn.github.io
+jxexrxoxn.tech
