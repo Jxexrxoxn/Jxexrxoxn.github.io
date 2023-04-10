@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://nowplaying.aidenwallis.co.uk/6433fa12c247436a6678abcf -->
+<html lang="en" class="wf-proximanova-n7-active wf-proximanova-n6-active wf-proximanova-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Aiden Wallis — Spotify Now Playing</title>
+<link href="https://aidenwallis.co.uk/favicon.ico" rel="shortuct icon">
+<script src="./ddr3uqp.js.download"></script>
+<style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-proxima-nova-n7;src:url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-proxima-nova-n6;src:url(https://use.typekit.net/af/27776b/00000000000000003b9b0939/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/27776b/00000000000000003b9b0939/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/27776b/00000000000000003b9b0939/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-proxima-nova-n4;src:url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+        html, body {
+            font-family: 'proxima-nova', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+        }
+        .wrapper {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        #container {
+            width: 70px;
+            height: 70px;
+            position: relative;
+            background: #1b1d20;
+            margin: auto;
+            transition: opacity .4s ease, transform .4s ease, width .4s ease;
+            opacity: 0;
+            transform: translateY(300px);
+        }
+        #container.raise {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #container.active {
+            width: 350px;
+        }
+        img {
+            width: 70px;
+            height: 70px;
+            transition: opacity .4s ease;
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        img.active {
+            opacity: 1;
+        }
+        .cover {
+            width: 70px;
+            height: 70px;
+            position: relative;
+            z-index: 9;
+        }
+        .main {
+            position: absolute;
+            padding-left: 70px;
+            padding-top: 10px;
+            top: 0;
+            height: 70px;
+            width: 100%;
+            max-width: 350px;
+            overflow: hidden;
+        }
+        #artists {
+            color: #25CBA3;
+            font-weight: 600;
+            margin: 0;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+        #name {
+            color: #fff;
+            margin: 4px 0 0;
+            font-size: 24px;
+        }
+        h4, h2 {
+            opacity: 0;
+            white-space: nowrap;
+            padding-left: 10px;
+            transform: translateX(-50px);
+            transition: opacity .4s ease, transform .4s ease;
+            display: inline-block;
+        }
+        h4.active, h2.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        h4.drop, h2.drop {
+            transform: translateY(100px);
+        }
+        .artists-height-fix {
+            min-height: 20px;
+        }
+        h2.scrolling, h4.scrolling {
+            /* -webkit-animation: slide 30s linear infinite; */
+            position: absolute;
+            animation: slide 30s linear infinite;
+        }
+        @keyframes slide {
+            from {
+                /* left: 100%; */
+                transform: translateX(100%);
+            }
+            to {
+                /* left: -100%; */
+                transform: translateX(-100%);
+            }
+        }
+    </style><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/27776b/00000000000000003b9b0939/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/27776b/00000000000000003b9b0939/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/27776b/00000000000000003b9b0939/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style>
+</head>
+<body>
+<div class="wrapper">
+<div id="container" class="raise active">
+<div class="cover">
+<img id="album-current" alt="Current album cover" class="active" src="./ab67616d0000b2735fc9e3fad14ea2885f33bd8f">
+<img id="album-new" alt="New album cover" src="https://nowplaying.aidenwallis.co.uk/6433fa12c247436a6678abcf" class="">
+</div>
+<div class="main">
+<div class="artists-height-fix"><h4 id="artists" class="active">quinn</h4></div>
+<h2 id="name" class="active">idk, just thinking</h2>
+</div>
+</div>
+</div>
+<script src="./fetch.min.js.download" defer="defer"></script>
+<script src="./app.js.download" defer="defer"></script>
+
+<script async="" src="./js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124482195-1');
+</script>
+
+
+</body><style id="stylus-54" type="text/css" class="stylus">.OCY4jHBlCVZEyGvtSv0J {
+    border-radius: 12px;
+}
+footer {
+    border-radius: 12px;
+}
+.mMx2LUixlnN_Fu45JpFB,
+.CmkY1Ag0tJDfnFXbGgju,
+._EShSNaBK1wUIaZQFJJQ,
+.Yn2Ei5QZn19gria6LjZj,
+.tUwyjggD2n5KvEtP5z1B,
+.contentSpacing,
+.NXiYChVp4Oydfxd7rT5r,
+.RMDSGDMFrx8eXHpFphqG,
+.XPjEhsPyuOvMZ9NsDrxT,
+.idI9vydtCzXVhU1BaKLw {
+    border-radius: 12px;
+}
+.Button-sc-y0gtbx-0 {
+    display: none;
+}
+.jb9xD5ECTqKFK02qe3HZ,
+.tsv7E_RBBw6v0XTQlcRo,
+.XiVwj5uoqqSFpS4cYOC6,
+.xBV4XgMq0gC5lQICFWY_,
+.jvWzgRWM_y_9FFTYRCcB,
+.g3f_cI5usQX7ZOQyDtA9,
+.Z35BWOA10YGn5uc9YgAp,
+.tr8V5eHsUaIkOYVw7eSG,
+.Root__nav-bar {
+    border-radius: 12px;
+}
+
+.MEjuIn9iTBQbnCqHpkoQ,
+._LKG3z7SnerR0eigPCoK {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    filter: blur(3px);
+    font-size: 45px;
+
+    opacity: 0.5;
+}
+.arY01KDGhWNgzlAHlhpd {
+    filter: blur(0px);
+    opacity: 1;
+
+    transition: 0.8s ease;
+}
+.McwcCfBLSuXa5UDU1IMw {
+    opacity: 0;
+}
+nav,
+.CoLO4pdSl8LGWyVZA00t,
+.koyeY6AgGRPmyPITi7yO,
+.qJOhHoRcFhHJpEQ2CwFT {
+    border-radius: 12px;
+}
+
+.CoLO4pdSl8LGWyVZA00t {
+
+    z-index: -100;
+    margin-top: -20px;
+}
+.gHImFiUWOg93pvTefeAD,
+.xYgjMpAjE5XT05aRIezb {
+    border-radius: 0;
+}
+.h4HgbO_Uu1JYg5UGANeQ,
+.wTUruPetkKdWAR1dd6w4 {
+    border-radius: 12px;
+}
+.tUwyjggD2n5KvEtP5z1B {
+    background: rgb(13, 13, 13);
+}
+.h4HgbO_Uu1JYg5UGANeQ,
+.wTUruPetkKdWAR1dd6w4,
+.iSbqnFdjb1SuyJ3uWydl {
+    transition: 0.3s;
+}
+/* ==UserStyle==
+@name           Spotify Dracula
+@namespace      USO Archive
+@author         Taylor TEK
+@description    `Spotify theme that follows Dracula guidelines`
+@version        20221114.7.15
+@license        CC-BY-NC-4.0
+@preprocessor   uso
+==/UserStyle== */
+/* ==UserStyle==
+@name           Dracula Spotify
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Spotify Theme that follows Dracula guidelines
+@author         TaylorTek
+@license        GNU GPLv3
+==/UserStyle== */</style></html>
